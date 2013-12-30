@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css">
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <div id="bg">
+        <img src="Content/images/background.png" />
+    </div>
+
+    <div class="main_strip">
+        <div class="span3 tile" id="left_tile">            
+            @RenderSection("LeftTile", required: false)
+            <div class="menu item1" id="byArtists">+ by artists </div>
+            <div class="menu item2" id="byGenres">+ by genres </div>
+            <div class="menu item3" id="byPlayCounts">+ by play counts </div>
+        </div>
+
+        <div class="span3 tile" id="center_tile">
+            @RenderSection("CenterTile", required: false)
+        </div>
+
+        <div class="span3 tile" id="right_tile">
+            @RenderSection("RightTile", required: false)
+        </div>
+    </div>
+
+    @RenderBody()
+
+    @*--------------scripts-------------*@
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
