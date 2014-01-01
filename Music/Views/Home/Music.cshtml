@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Music";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <script src="~/Scripts/Site/graphServices.js"></script>
+
+<body>
+
+    @section LeftTile {
+        @*space for picture*@
+        <div class="left_tile_icon">
+            <a href="../">
+                <img style="border-radius: 10px" src="~/Content/images/icon.png" /></a>
+        </div>
+    }
+
+    @section RightTile {
+        <div class="span1">
+            <br />
+
+            <div class="dropdown">
+                <select id="xChoice" onchange="graph(this)">
+                    <option selected="selected">Album</option>
+                    <option>Artist</option>
+                    <option>Song</option>
+                    <option>Genre</option>
+                </select>
+            </div>
+        </div>
+        <div class="span5" style="margin-top: -25px">
+            <div id="chart" class="graph"></div>
+        </div>
+
+        <div class="span5">
+            <div style="text-align: center; margin-bottom: 20px">
+                <div  class="dropdown">
+                    <select id="yChoice" onchange="graph(this)">
+                        <option value="PlayCount" selected="selected">Number of plays</option>
+                        <option value="SongCount">Number of songs</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    }
+</body>
+

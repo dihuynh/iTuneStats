@@ -1,0 +1,173 @@
+﻿body {
+    font-size: .85em;
+    font-family: "Courier New";
+    color: #ebebeb;
+}
+
+.tile {
+    background-color: #3d3027;
+    height: auto;
+    color: white;
+    z-index: 1;
+    border-radius: 20px;
+    margin-left: 5%;
+    max-width: 500px;
+}
+
+#left_tile {
+    width: 17%;
+}
+
+.left_tile_icon {
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*padding:5px;*/ 
+    border-radius: 10px;
+}
+
+header, footer, nav, section {
+    display: block;
+}
+
+#bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -100;
+}
+
+    #bg img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        min-width: 50%;
+        min-height: 50%;
+    }
+
+a {
+    color: inherit;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
+.main_strip {
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.menu {
+    font-size: large;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 8%;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.item1 {
+    background-color: #0f181f;
+}
+
+    .item1:hover {
+        background-color: #203341;
+    }
+
+.item2 {
+    background-color: #9ecacb;
+    color: black;
+}
+
+    .item2:hover {
+        background-color: #bfdcdd;
+    }
+
+.item3 {
+    background-color: #dfcba6;
+    color: black;
+}
+
+    .item3:hover {
+        background-color: #e6d6b9;
+    }
+
+#lean_overlay {
+    position: fixed;
+    z-index: 10000;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: none;
+    margin: auto;
+}
+
+#test {
+    width: auto;
+    height: auto;
+    display: none;
+    background: #FFF;
+    margin: -150px;
+}
+
+#test1 {
+    width: auto;
+    height: auto;
+    display: none;
+    background: #FFF;
+    margin: -150px;
+}
+
+.popup {
+    height: 600px;
+    width: 800px;
+}
+
+.popup2 {
+    width: 600px;
+    height:625px;
+    top:0;
+}
+
+.resume {
+    color: #ebebeb;
+}
+
+.graph {
+    min-width: 400px; 
+    height: 400px;
+    margin-top:25px;
+    margin-left:-10px;
+    margin-right:20px;
+    width:auto;
+}
+
+.dropdown select {
+    color:white;
+    width:auto;
+    height:auto;
+    font-size: 12px;
+    border:none;
+    font-size:medium;
+    background:#3d3027;
+    padding: 5px;
+}
+
+.dropdown {
+
+    background: url(http://www.stackoverflow.com/favicon.ico) no-repeat center #3d3027;
+}

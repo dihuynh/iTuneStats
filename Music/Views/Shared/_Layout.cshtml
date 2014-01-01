@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap-responsive.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css">
+    <script src="~/Scripts/jquery-1.9.1.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap_modal.js"></script>
+    <script src="~/Scripts/Site/Global.js"></script>
+    <script src="~/Scripts/Site/highcharts.js"></script>
+    <script src="~/Scripts/Site/exporting.js"></script>
+    <script src="~/Scripts/Site/jquery.leanModal.min.js"></script>
+</head>
+<body>
+
+    <div id="bg">
+        <img src="~/Content/images/background.png" />
+    </div>
+
+    <div class="main_strip">
+        <div class="span3 tile" id="left_tile">
+            @RenderSection("LeftTile", required: false)
+            <a href="~/About/"><div class="menu item1" id="about" >+ About </div></a>
+            <a href="~/Home/Music"><div class="menu item2" id="music">+ Music </div></a>
+            <a href="~/Projects/"><div class="menu item3" id="projects">+ Projects </div></a>
+        </div>
+
+
+        <div class="span9 tile" id="right_tile">
+            @RenderSection("RightTile", required: false)
+        </div>
+    </div>
+
+    @RenderBody()
+
+
+</body>
+</html>

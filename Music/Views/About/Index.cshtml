@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript">
+    $(function () {
+        $('a[rel*=leanModal]').leanModal({ top: 200, closeButton: ".modal_close" });
+    });
+</script>
+
+<body>
+    @section LeftTile {
+        @*space for picture*@
+        <div class="left_tile_icon">
+            <a href="../"><img style="border-radius: 10px" src="~/Content/images/pic.jpg" /></a>
+        </div>
+    }
+
+
+    @section RightTile {
+        <div id="righTileTitle"></div>
+        <div style="padding-left: 20px; padding-bottom:20px">
+            <h3>About Di</h3>
+            <br />
+            <ol>
+                <li>It's pronounced /dee/. </li>
+                <li>She plays basketball though she is 5ft and 100% Asian. </li>
+                <li>She likes to code and play instruments too.</li>
+                <li>She's in 
+                    <a rel="leanModal" href="#test1"> this statistic </a> 
+                    
+                    and this statistic.</li>
+                <li>It is ok to say that Di is a minority. She embraces it.</li>
+            </ol>
+
+            <br />
+            <h4>Bucket List</h4>
+
+            <br />
+            <a class="resume" rel="leanModal" href="#test"><h4>Resume </h4></a>
+                <div id="test">
+                    <iframe class="popup" src="~/Content/resume.pdf" ></iframe>
+               </div>
+
+            <br />
+            <h4>Social Media</h4>
+             <a href="http://www.linkedin.com/pub/di-huynh/46/440/51a"><img src="~/Content/images/linkedin.png"/></a>
+             <a href="http://www.facebook.com/di.huynh"><img src="~/Content/images/facebook.png"/></a>
+
+            <div id="test1">
+                <iframe class="popup2" src="~/Content/images/stat1.png"></iframe>
+            </div>
+      </div>
+    }
+
+</body>
+
